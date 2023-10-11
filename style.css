@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Kajiro";
+  src: local("Kajiro Regular"), local("Kajiro-Regular"),
+    url("Kajiro.woff2") format("woff2"), url("Kajiro.woff") format("woff"),
+    url("Kajiro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  font-family: "Gilroy";
+}
+#top {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  pointer-events: none;
+  /* background-color: rgb(255, 0, 0); */
+}
+#bottom {
+  height: 100vh;
+  width: 100%;
+  /* background-color: black; */
+}
+#bottom img {
+  height: 100%;
+  width: 120%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#workarea {
+  height: 100vh;
+  width: 90%;
+  /* background-color: aqua; */
+  margin: auto;
+}
+#navleft img {
+  height: 6vh;
+}
+#navbar {
+  width: 100%;
+  height: 10vh;
+  /* background-color: red; */
+  padding: 2vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#navleft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+}
+#navleft a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  pointer-events: all;
+}
+
+#navright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 12%;
+}
+#navright a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  pointer-events: all;
+}
+
+#hero {
+  height: 100%;
+  width: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+#hleft {
+  width: 40%;
+  height: 500px;
+  margin-top: 10vh;
+
+  /* position: absolute; */
+  /* background-color: bisque; */
+}
+#hright {
+  width: 25%;
+  height: 100px;
+  margin-top: 10vh;
+  text-align: end;
+  color: #fff;
+  /* background-color: bisque; */
+}
+.elem {
+  overflow: hidden;
+  height: 9vw;
+  position: relative;
+}
+
+.elem h1 {
+  font-family: "kajiro";
+  font-size: 9vw;
+  top: 100%;
+  left: 0;
+  color: #fff;
+  position: absolute;
+  text-transform: uppercase;
+}
+.elem h1:nth-child(1) {
+  top: 0;
+}
+#hleft button {
+  margin-top: 2vw;
+  padding: 2vh 3vw;
+  font-family: "kajiro";
+  font-size: 2vw;
+  letter-spacing: 0.3vw;
+  pointer-events: all;
+}
+
+#hright #imgdiv {
+  width: 100%;
+  height: 150px;
+  background-image: url(https://images.unsplash.com/photo-1605433235628-489951ba1978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2056&q=80);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3vh;
+}
+
+#hright p {
+  margin-bottom: 3vh;
+}
+#hright p:nth-child(3) {
+  margin-bottom: 9vh;
+}
